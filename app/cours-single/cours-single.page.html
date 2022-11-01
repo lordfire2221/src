@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-back-button [text]="getBackButtonText()" defaultHref="/cours">
+    </ion-back-button>
+    </ion-buttons>
+    <ion-title >Cours</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="top" horizontal="end" edge slot="fixed" >
+    <ion-fab-button (click)="play(cour.cour)">
+      <ion-icon name="play">
+      </ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-list-header *ngFor="let title of datas">
+    <h2 style="text-align:center; color: red;text-decoration: underline;"><strong>{{title.titre}}</strong></h2>
+  </ion-list-header>
+  <ion-list *ngFor="let cours of datas">
+    <p style="padding-left:2vw;paddding-right:2vw;">{{cours.description}}</p>
+    <img src="{{cours.image}}"  *ngIf="cours.image!='none'">
+    <ion-text *ngFor="let chapitres of cours.sous_chapitre">
+     <h3 style="color:green; margin-left:2vw;"><strong>{{chapitres.titre}}</strong></h3>
+    <ul style="list-style:none; margin-right:9vw" *ngFor="let paragraphe of chapitres.paragraphes">
+      <li style="list-style: none; text-align: justify;"><h4>{{paragraphe.titre}}</h4></li>
+      <li style="list-style:none; text-align: justify;"><p>{{paragraphe.contenu}}</p></li>
+      <li><img src="{{paragraphe.image}}" *ngIf="paragraphe.image!='none'"></li>
+    </ul>
+    </ion-text>
+    <div class="row">
+      <div class="boutton" style="display:flex ; flex-direction:row;justify-content: space-around;">
+        <div class="boutton1" style="background-color:red; border:0.5vw red solid ; border-radius: 0.5vw;">
+          <div class="col-md-6"> <ion-buttons expand="full" class="btn-danger"><a (click)="back(cours.num)" style="text-decoration: none;">Préccedant</a></ion-buttons></div>
+        </div>
+        <div class="boutton2" style="background-color:greenyellow; border:0.7vw greenyellow solid ; border-radius: 0.5vw;">
+          <div class="col-md-6"><ion-buttons expand="full" class="btn-sucess"><a (click)="next(cours.num)" style="text-decoration: none;">Suivant</a></ion-buttons></div>
+
+        </div>
+      </div>
+    </div>
+  </ion-list>
+</ion-content>

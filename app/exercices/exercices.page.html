@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [text]="getBackButtonText()" defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Les Exercices
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="body" color="light">
+  <ion-list>
+    <!-- <app-message *ngFor="let message of getMessages()" [message]="message"></app-message> -->
+    <a (click)="redirectTo('revisions')" style="text-decoration: none;">
+      <ion-item>
+        <ion-label>
+          Les Révisions
+        </ion-label>
+        <ion-icon name="arrow-forward"></ion-icon>
+      </ion-item>
+    </a>
+    <a (click)="redirectTo('tests')" style="text-decoration: none;">
+      <ion-item>
+        <ion-label>
+          Les Tests
+        </ion-label>
+        <ion-icon name="arrow-forward"></ion-icon>
+      </ion-item>
+    </a>
+  </ion-list>
+</ion-content>

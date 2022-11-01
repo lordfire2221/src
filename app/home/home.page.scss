@@ -1,0 +1,18 @@
+ion-item{
+    border-radius: 0.8vw;
+    margin-bottom: 1.5vw;
+    border: #e9e9e9d8 solid 0.2vw;
+}
+ion-list{
+    background: none;
+}
+ion-label{
+    font-weight: 600;
+    border-bottom: none;
+}
+ion-content.body{
+    --background: url(../../assets/home.jpg) round;
+}
+.inner-scroll{
+    background: none;
+}

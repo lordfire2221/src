@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Auto-Ecole Pacifique
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="body">
+  <!-- <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">
+        Home
+      </ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <ion-list inset>
+    <!-- <app-message *ngFor="let message of getMessages()" [message]="message"></app-message> -->
+    <a routerLink="/cours" style="text-decoration: none;">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="../../assets/courses.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          Les Cours
+        </ion-label>
+      </ion-item>
+    </a>
+    <a routerLink="/exercices" style="text-decoration: none;">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="../../assets/tests.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          Les Exercices
+        </ion-label>
+      </ion-item>
+    </a>
+    <a routerLink="/signalisations" style="text-decoration: none;">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="../../assets/signalisation.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          Les Signalisations
+        </ion-label>
+      </ion-item>
+    </a>
+    <a routerLink="/statistiques" style="text-decoration: none;">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="../../assets/statistique.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          Les Statistiques
+        </ion-label>
+      </ion-item>
+    </a>
+  </ion-list>
+</ion-content>

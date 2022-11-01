@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [text]="getBackButtonText()" defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Sommaire</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light" class="body">
+<ion-list>
+  <a (click)="redirectTo(1)" style="text-decoration: none;">
+  <ion-item>
+    <ion-label>I- Les catégories de permis</ion-label>
+    <ion-icon><img src="../../assets/icone_fleche.svg" alt=""></ion-icon>
+  </ion-item>
+  </a>
+
+  <a (click)="redirectTo(2)" style="text-decoration: none;">
+    <ion-item>
+      <ion-label>II- La route </ion-label>
+      <ion-icon name="arrow-forward"></ion-icon>
+    </ion-item>
+    </a>
+
+    <a (click)="redirectTo(3)" style="text-decoration: none;">
+      <ion-item>
+        <ion-label>III- Les signalisations routières</ion-label>
+        <ion-icon name="arrow-forward"></ion-icon>
+      </ion-item>
+      </a>
+
+      <a (click)="redirectTo(4)" style="text-decoration: none;">
+        <ion-item>
+          <ion-label>IV-Les règles de priorité </ion-label>
+          <ion-icon name="arrow-forward"></ion-icon>
+        </ion-item>
+        </a>
+      
+        <a (click)="redirectTo(5)" style="text-decoration: none;">
+          <ion-item>
+            <ion-label>V- Les feux obligatoires à l'avant et à l'arrière d'un véhicule</ion-label>
+            <ion-icon name="arrow-forward"></ion-icon>
+          </ion-item>
+          </a>
+
+          <a (click)="redirectTo(6)" style="text-decoration: none;">
+            <ion-item>
+              <ion-label>VI- Le dépassement</ion-label>
+            </ion-item>
+            </a>
+
+            <a (click)="redirectTo(7)" style="text-decoration: none;">
+              <ion-item>
+                <ion-label>VII- Le croisement</ion-label>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </ion-item>
+              </a>
+
+              <a (click)="redirectTo(8)" style="text-decoration: none;">
+                <ion-item>
+                  <ion-label>VIII- Les documents obligatoires à bord d'un véhicule</ion-label>
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </ion-item>
+                </a>
+
+                <a (click)="redirectTo(9)" style="text-decoration: none;">
+                  <ion-item>
+                    <ion-label>IX- Arrêt et stationnement</ion-label>
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </ion-item>
+                  </a>
+
+                  <a (click)="redirectTo(10)" style="text-decoration: none;">
+                    <ion-item>
+                      <ion-label>X- Cacul de la distance d'arrêt et la distance de freinage</ion-label>
+                      <ion-icon name="arrow-forward"></ion-icon>
+                    </ion-item>
+                    </a>
+
+                    <a (click)="redirectTo(11)" style="text-decoration: none;">
+                      <ion-item>
+                        <ion-label>XI- Les accidents et le secourisme</ion-label>
+                        <ion-icon name="arrow-forward"></ion-icon>
+                      </ion-item>
+                      </a>
+
+                      <a (click)="redirectTo(12)" style="text-decoration: none;">
+                        <ion-item>
+                          <ion-label>XII- Alimentation du moteur</ion-label>
+                          <ion-icon name="arrow-forward"></ion-icon>
+                        </ion-item>
+                        </a>
+
+                        <a (click)="redirectTo(13)" style="text-decoration: none;">
+                          <ion-item>
+                            <ion-label>XIII- Les quatre temps du moteur </ion-label>
+                            <ion-icon name="arrow-forward"></ion-icon>
+                          </ion-item>
+                          </a>
+</ion-list>
+</ion-content>

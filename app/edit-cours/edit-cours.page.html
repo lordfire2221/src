@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>edit-cours</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="display: grid;grid-template-columns:1fr 1fr 1fr">
+  <ion-button *ngFor="let cour of cours" (click)="add(cour)">
+    {{cour.num}}
+  </ion-button>
+</ion-content>
